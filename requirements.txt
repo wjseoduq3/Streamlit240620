@@ -6,5 +6,6 @@ numpy
 matplotlib
 seaborn
 pyplot
+plotly
 streamlit
 pandas-datareader
