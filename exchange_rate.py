@@ -5,6 +5,7 @@ import pandas as pd
 import streamlit as st 
 import matplotlib.pyplot as plt
 import matplotlib
+import time
 
 from io import BytesIO 
 
@@ -25,6 +26,7 @@ def fx_rate():
             tables = soup.find_all('table')
 
             dfs = pd.read_html(str(tables[0]),header=1)
+            time.sleep(0.5)
 
             # streamlit에서 하면 if 조건문 필요 없음
             # if dfs[0].empty:
