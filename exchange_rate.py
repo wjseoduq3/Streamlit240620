@@ -57,7 +57,7 @@ def fx_rate():
 
         # df_excange_rate2.index = df_excange_rate2.index.astype(str)
         # df_excange_rate2.index = pd.to_datetime(df_excange_rate2.index, format='%Y-%m-%d')
-        df_excange_rate2.index = pd.to_datetime(df_excange_rate2.index,format='%Y-%m-%d', errors='ignore')
+        df_excange_rate2.index = pd.to_datetime(df_excange_rate2.index,format='%Y-%m-%d') #, errors='ignore')
 
         st.subheader(f"{currency_name} 환율 데이터")
         st.dataframe(df_excange_rate2.head(100))
