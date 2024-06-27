@@ -10,3 +10,4 @@ streamlit==1.36.0
 html5lib
 Pillow
 io
+datetime
