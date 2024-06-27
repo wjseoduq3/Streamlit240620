@@ -6,8 +6,9 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import matplotlib
 import time
+import lxml
 
-from io import BytesIO 
+# from io import BytesIO
 
 def fx_rate():
 
