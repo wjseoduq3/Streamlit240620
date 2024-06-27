@@ -8,7 +8,8 @@ import matplotlib
 import time
 import lxml
 
-# from io import BytesIO
+import io
+import openpyxl
 
 def fx_rate():
 
@@ -76,7 +77,7 @@ def fx_rate():
         st.text('** 환율 데이터파일 다운로드 **')
         csv_data = df_excange_rate.to_csv()
 
-        excel_data = BytesIO()
+        excel_data = io.BytesIO()
         df_excange_rate.to_excel(excel_data)
 
         col = st.columns(2)
@@ -88,7 +89,6 @@ def fx_rate():
 
     # else:
     #     pass
-
 
 
 
